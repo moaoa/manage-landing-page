@@ -1,0 +1,59 @@
+.header {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  position: relative;
+  z-index: 3;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+    }
+
+    ul {
+      font-size: 14px;
+      font-weight: bold;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 300ms ease-in-out;
+      padding: 40px 0;
+      text-align: center;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      width: 80%;
+      border-radius: 20px;
+
+      &.open {
+        visibility: visible;
+        opacity: 1;
+      }
+      a {
+        color: $DarkBlue;
+      }
+      li:not(:last-child) {
+        padding-bottom: 35px;
+      }
+    }
+    &__toggler {
+    }
+  }
+}
+.overlay {
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(transparent, black);
+  transition: opacity 200ms ease-in-out;
+  &.open {
+    visibility: visible;
+    opacity: 0.8;
+  }
+}
