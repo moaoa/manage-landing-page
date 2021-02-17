@@ -38,6 +38,28 @@
       }
     }
     &__toggler {
+      div {
+        width: 27px;
+        height: 5px;
+        background-color: $DarkBlue;
+        border-radius: 3px;
+        transition: transform 300ms ease-in-out;
+      }
+      div:not(:last-child) {
+        margin-bottom: 3px;
+      }
+      &.open {
+        div:first-child {
+          transform-origin: 14% 130%;
+          transform: rotate(45deg);
+        }
+        div:nth-child(2) {
+          display: none;
+        }
+        div:last-child {
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 }

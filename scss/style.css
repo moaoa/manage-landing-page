@@ -13,6 +13,13 @@ body {
   font-family: "Be Vietnam", sans-serif;
 }
 
+.finger-shap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -81,6 +88,37 @@ a {
   padding-bottom: 35px;
 }
 
+.header__nav__toggler div {
+  width: 27px;
+  height: 5px;
+  background-color: #242d52;
+  border-radius: 3px;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.header__nav__toggler div:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.header__nav__toggler.open div:first-child {
+  -webkit-transform-origin: 14% 130%;
+          transform-origin: 14% 130%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__nav__toggler.open div:nth-child(2) {
+  display: none;
+}
+
+.header__nav__toggler.open div:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .overlay {
   z-index: 2;
   visibility: hidden;
@@ -99,5 +137,14 @@ a {
 .overlay.open {
   visibility: visible;
   opacity: 0.8;
+}
+
+.hero {
+  position: relative;
+  z-index: 3;
+}
+
+.hero__charts {
+  background-image: url("../images/illustration-intro.svg");
 }
 /*# sourceMappingURL=style.css.map */

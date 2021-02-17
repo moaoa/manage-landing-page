@@ -1,0 +1,7 @@
+.hero {
+  position: relative;
+  z-index: 3;
+  &__charts {
+    background-image: url("../images/illustration-intro.svg");
+  }
+}
