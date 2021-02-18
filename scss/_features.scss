@@ -1,0 +1,16 @@
+.features {
+  padding-bottom: 70px;
+  &__intro {
+    text-align: center;
+    padding-right: 15px;
+  }
+  &__boxes {
+    .box {
+      &__heading {
+        display: flex;
+        align-items: center;
+        background-color: $VeryPaleRed;
+      }
+    }
+  }
+}
