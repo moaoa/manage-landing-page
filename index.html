@@ -11,6 +11,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./scss/style.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"
@@ -32,16 +33,17 @@
           <li><a href="#"> Careers </a></li>
           <li><a href="#"> Community </a></li>
         </ul>
-        <div class="header__nav__toggler">
+        <div class="header__nav__toggler mobile-only">
           <div></div>
           <div></div>
           <div></div>
         </div>
+        <button class="btn desktop-only">Get Started</button>
       </nav>
     </header>
     <div class="overlay"></div>
     <svg
-      class="finger-shap"
+      class="finger-shap mobile-only"
       width="366.742"
       height="373.158"
       viewBox="-90 75 266.742 273.158"
@@ -57,6 +59,25 @@
         opacity="0.71"
         ;
       />
+    </svg>
+    <svg
+      class="finger-shap desktop-only"
+      width="566.742"
+      height="573.158"
+      viewBox="-40 105 266.742 273.158"
+      style=""
+    >
+      <rect
+        id="Rectangle_1"
+        data-name="Rectangle 1"
+        width="126"
+        height="350"
+        rx="63"
+        transform="translate(174.592) rotate(43)"
+        fill="#fff0eb"
+        opacity="0.71"
+        ;=""
+      ></rect>
     </svg>
     <section class="hero container container--px">
       <div class="hero__content">
@@ -274,15 +295,17 @@
             </g>
           </svg>
         </div>
-        <h1>Bring everyone together to build better products.</h1>
-        <p>
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the larger team goals in view.
-        </p>
-        <button class="btn">Get Started</button>
+        <div class="hero__intro">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
       </div>
       <svg
-        class="finger-shap"
+        class="finger-shap mobile-only"
         width="366.742"
         height="373.158"
         viewBox="-200 40 266.742 273.158"
@@ -300,58 +323,176 @@
         />
       </svg>
     </section>
-    <section class="features container container--pl">
-      <div class="features__intro">
-        <h2>What’s different about Manage?</h2>
-        <p>
-          Manage provides all the functionality your team needs, without the
-          complexity. Our software is tailor-made for modern digital product
-          teams.
-        </p>
-      </div>
-      <div class="features__boxes">
-        <div class="box">
-          <div class="box__heading">
-            <span class="badge">01</span>
-            <h3>Track company-wide progress</h3>
-          </div>
+    <section class="features">
+      <div class="container container--pl">
+        <div class="features__intro">
+          <h2>What’s different about Manage?</h2>
           <p>
-            See how your day-to-day tasks fit into the wider vision. Go from
-            tracking progress at the milestone level all the way done to the
-            smallest of details. Never lose sight of the bigger picture again.
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
           </p>
         </div>
-        <div class="box">
-          <div class="box__heading">
-            <span class="badge">02</span>
-            <h3>Advanced built-in reports</h3>
+        <div class="features__boxes">
+          <div class="box">
+            <div class="box__heading">
+              <span class="badge">01</span>
+              <h3>Track company-wide progress</h3>
+            </div>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
           </div>
-          <p>
-            Set internal delivery estimates and track progress toward company
-            goals. Our customisable dashboard helps you build out the reports
-            you need to keep key stakeholders informed.
-          </p>
-        </div>
-        <div class="box">
-          <div class="box__heading">
-            <span class="badge">03</span>
-            <h3>Everything you need in one place</h3>
+          <div class="box">
+            <div class="box__heading">
+              <span class="badge">02</span>
+              <h3>Advanced built-in reports</h3>
+            </div>
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
           </div>
-          <p>
-            Stop jumping from one service to another to communicate, store
-            files, track tasks and share documents. Manage offers an all-in-one
-            team productivity solution.
-          </p>
+          <div class="box">
+            <div class="box__heading">
+              <span class="badge">03</span>
+              <h3>Everything you need in one place</h3>
+            </div>
+            <p>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
         </div>
+        <svg
+          class="finger-shap desktop-only"
+          width="600"
+          height="700"
+          viewBox="-200 40 266.742 273.158"
+        >
+          <rect
+            id="Rectangle_1"
+            data-name="Rectangle 1"
+            width="126"
+            height="350"
+            rx="63"
+            transform="translate(174.592) rotate(43)"
+            fill="#fff0eb"
+            opacity="0.71"
+            ;
+          />
+        </svg>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials container container--px">
       <h2>What they’ve said</h2>
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <img src="./images/avatar-anisha.png" alt="anisha testimonial" />
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="splide__slide">
+              <img src="./images/avatar-ali.png" alt="anisha testimonial" />
+              <h3>Ali Bravo</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="splide__slide">
+              <img src="./images/avatar-richard.png" alt="anisha testimonial" />
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="splide__slide">
+              <img src="./images/avatar-shanai.png" alt="anisha testimonial" />
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn desktop-only">Get Started</button>
     </section>
+    <section class="cta_section">
+      <div class="container container--px">
+        <div class="cta_section__content">
+          <h1>Simplify how your team works today</h1>
+          <div class="col6">
+            <button class="btn btn-white">Get Started</button>
+          </div>
+        </div>
+        <svg
+          class="finger-shap"
+          width="366.742"
+          height="373.158"
+          viewBox="-250 150 266.742 273.158"
+        >
+          <rect
+            id="Rectangle_1"
+            data-name="Rectangle 1"
+            width="126"
+            height="350"
+            rx="63"
+            transform="translate(174.592) rotate(43)"
+            fill="#fff"
+            opacity="0.1"
+            ;
+          />
+        </svg>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container container--px">
+        <form>
+          <input type="text" placeholder="Updates in your inbox" />
+          <button class="btn btn-noShadow">Go</button>
+        </form>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-media">
+          <img src="./images/icon-facebook.svg" alt="facebook" />
+          <img src="./images/icon-youtube.svg" alt="youtube" />
+          <img src="./images/icon-twitter.svg" alt="twitter" />
+          <img src="./images/icon-pinterest.svg" alt="pinterest" />
+          <img src="./images/icon-instagram.svg" alt="instagram" />
+        </div>
+        <div class="logo">
+          <img src="./images/logo-white.svg" alt="logo" />
+        </div>
+        <span>Copyright 2020. All Rights Reserved</span>
+      </div>
+    </footer>
+
     <!--    
-      Anisha Li “Manage has supercharged our team’s workflow. The
-    ability to maintain visibility on larger milestones at all times keeps
-    everyone motivated.” Ali Bravo “We have been able to cancel so many other
+         “We have been able to cancel so many other
     subscriptions since using Manage. There is no more cross-channel confusion
     and everyone is much more focused.” Richard Watts “Manage allows us to
     provide structure and process. It keeps us organized and focused. I can’t
@@ -369,15 +510,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
 
-    <script>
-      const navToggler = document.querySelector(".header__nav__toggler");
-      const navList = document.querySelector(".header__nav ul");
-      const overlay = document.querySelector(".overlay");
-      navToggler.addEventListener("click", () => {
-        navList.classList.toggle("open");
-        overlay.classList.toggle("open");
-        navToggler.classList.toggle("open");
-      });
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

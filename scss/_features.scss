@@ -1,5 +1,6 @@
 .features {
   padding-bottom: 70px;
+  position: relative;
   &__intro {
     text-align: center;
     padding-right: 15px;
@@ -11,6 +12,34 @@
         align-items: center;
         background-color: $VeryPaleRed;
       }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .features {
+    .container {
+      display: flex;
+    }
+    &__intro {
+      flex: 0 0 50%;
+      text-align: left;
+    }
+    &__boxes {
+      flex: 0 0 50%;
+      .box__heading {
+        background-color: transparent;
+      }
+      p {
+        margin-left: 94px;
+      }
+    }
+    .finger-shap {
+      left: 0;
+      right: unset;
+      top: unset;
+      bottom: -50%;
+      transform: rotate(180deg);
     }
   }
 }

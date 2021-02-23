@@ -1,0 +1,68 @@
+.testimonials {
+  text-align: center;
+  h2 {
+    margin-bottom: 100px;
+  }
+
+  .splide {
+    padding-top: 50px;
+
+    &__track {
+      padding-top: 40px;
+    }
+    &__arrows {
+      display: none;
+    }
+    &__pagination {
+      margin-top: 25px;
+      margin-bottom: 46px;
+      button {
+        background: transparent;
+        border: $BrightRed 3px solid;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        padding: 0;
+        margin-right: 3px;
+        &.is-active {
+          background: $BrightRed;
+        }
+      }
+    }
+
+    &__slide {
+      padding-top: 52px;
+      padding-bottom: 52px;
+      position: relative;
+      background-color: $VeryLightGray;
+
+      img {
+        width: 74px;
+        height: 74px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      h3 {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// DESKTOP STYLES
+@media (min-width: 900px) {
+  .testimonials {
+    padding-bottom: 180px;
+    .splide {
+      margin-bottom: 50px;
+      &__pagination {
+        display: none;
+      }
+      &__slide {
+        margin-right: 20px;
+      }
+    }
+  }
+}
